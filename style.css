@@ -1,3 +1,5 @@
+/* EB455F */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,17 +8,18 @@ a{
     text-decoration: none;
 }
 .banner{
-    background-color: #ee455b;
+    background-color: #2B3467;
 }
 .header-link{
     display: flex;
     justify-content: center;
 }
 nav{
-    background-color: #ecd850;
+    background-color: #BAD7E9;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: large;
     font-weight: 500;
 }
@@ -55,6 +58,26 @@ main{
     padding-bottom: 10px;
 }
 
+.left{
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.left > ul > a > li{
+    margin-bottom: 7px;
+    padding: 8px 10px;
+    background-color: #EB455F;
+    height: 15px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+.left > ul > a > li:hover{
+    font-size: small;
+    transition: font-size 500ms;
+}
+
 .middle{
     display: flex;
     flex-direction: column;
@@ -63,8 +86,24 @@ main{
 
 .midlle-para{
     text-align: center;
-    padding: 16px 0px;
-    font-size: large;
+    padding: 12px 0px;
+    font-size: 1.3rem;
+    color: #EB455F;
+    font-weight: 600;
+    animation: dhakdhak 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dhakdhak {
+    0%{
+        color: #EB455F;
+    }
+    50%{
+        color: #BAD7E9;
+    }
+    100%{
+        color: #2B3467;
+    }
 }
 
 .middle p{
@@ -108,15 +147,33 @@ main{
 .right{
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #EB455F;
+}
+.right a{
+    margin-bottom: 7px;
+    padding: 8px 10px;
+    background-color: #EB455F;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.right a:hover{
+    font-size: small;
+    transition: font-size 500ms;
 }
 
 footer{
-    background-color: #fa6308;
+    background-color: #BAD7E9;
     padding: 20px;
 }
 footer a{
     color: white;
-    background-color: black;
+    background-color: #EB455F;
     margin-left: 10px;
     padding: 20px 30px;
     border-radius: 5px;
@@ -131,7 +188,7 @@ footer a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    /* color: #EB455F; */
     font-size: large;
 }
 .foot-2{
@@ -140,7 +197,11 @@ footer a{
 .social{
     width: 20px;
     margin-left: 10px;
-    filter: invert();
+    /* filter: invert(); */
+}
+.social-2{
+    width: 25px;
+    margin-left: 5px;
 }
 
 
